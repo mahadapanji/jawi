@@ -1,0 +1,169 @@
+*{  
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 1;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 1;
+}
+
+body {
+    
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+    /* background-image: url("/assets/background.jpeg"); */
+    background:linear-gradient(0deg, rgba(120, 120, 120, 0.75), rgba(120, 120, 120, 0.75)), url("/assets/background.jpeg");;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    width: bold;
+    float: left;
+    font-family: Lucida Calligraphy;
+    color: rgb(177, 16, 16);
+}
+
+.menu{
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: rgb(244, 236, 225);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: rgb(75, 19, 19);
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: green;
+    
+}
+
+.section {
+    width: 1300px;
+    margin: auto;
+    
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    padding: 70px 70px;
+    /* background: rgba(120, 120, 120, 0.75); */
+    /* border-radius: 15px; */
+}
+
+
+.section img {
+    /* width: 300px;
+     height: 300px; */
+     opacity: 1;
+     border-radius: 15px;
+     display: flex;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+
+.content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  .reveal {
+    /* position: static; */
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 0.5s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 0.5s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 0.5s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
