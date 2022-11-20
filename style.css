@@ -17,12 +17,11 @@ h3 {
 }
 
 body {
-    
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans',sans-serif;
-    /* background-image: url("/assets/background.jpeg"); */
-    background:linear-gradient(0deg, rgba(120, 120, 120, 0.75), rgba(120, 120, 120, 0.75)), url("./assets/background.jpeg");;
+    background-image: url("./assets/background.jpeg");
+    /* background:linear-gradient(0deg, rgba(120, 120, 120, 0.75), rgba(120, 120, 120, 0.75)), url("./assets/background.jpeg");; */
 }
 
 .wrapper {
@@ -79,14 +78,19 @@ nav ul li a:hover {
     
 }
 
+.footer {
+  padding: 70px 70px;
+
+}
+
 .section {
-    width: 1300px;
+    max-width: 1350px;
     margin: auto;
     
     /* margin-left: 50px;
     margin-right: 50px; */
     padding: 70px 70px;
-    /* background: rgba(120, 120, 120, 0.75); */
+    background: rgba(120, 120, 120, 0.75);
     /* border-radius: 15px; */
 }
 
